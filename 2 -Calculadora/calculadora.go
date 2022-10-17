@@ -31,6 +31,6 @@ func main() {
 	}
 	if operadores == "/" {
 		total := number1 / number2
-		fmt.Printf("%v + %v = %v ", number1, number2, total)
+		fmt.Printf("%v / %v = %v ", number1, number2, total)
 	}
 }
