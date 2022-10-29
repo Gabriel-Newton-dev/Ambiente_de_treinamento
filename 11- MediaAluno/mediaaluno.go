@@ -7,10 +7,10 @@ import "fmt"
 
 var nomeAluno string
 var turma int
-var nota1 int
-var nota2 int
-var nota3 int
-var nota4 int
+var nota1 float64
+var nota2 float64
+var nota3 float64
+var nota4 float64
 
 func main() {
 
@@ -37,11 +37,11 @@ func main() {
 	media := (nota1 + nota2 + nota3 + nota4) / 4
 
 	if media >= 7 {
-		fmt.Printf("O aluno %s, ficou com a média: %v, status: Aluno Aprovado", nomeAluno, media)
+		fmt.Printf("O aluno %s, ficou com a média: %.2f, status: Aluno Aprovado", nomeAluno, media)
 	} else if media >= 5 && media < 7 {
-		fmt.Println("Aluno em recuperação")
+		fmt.Printf("O aluno %s, ficou com a média: %.2f, status: Aluno em recuperação", nomeAluno, media)
 	} else {
-		fmt.Println("Aluno reprovado")
+		fmt.Printf("O aluno %s, ficou com a média: %.2f, status: Aluno reprovado", nomeAluno, media)
 	}
 
 }
