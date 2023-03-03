@@ -7,10 +7,7 @@ import "fmt"
 
 var nomeAluno string
 var turma int
-var nota1 float64
-var nota2 float64
-var nota3 float64
-var nota4 float64
+var nota1, nota2, nota3, nota4 float64
 
 func main() {
 
@@ -34,6 +31,11 @@ func main() {
 	fmt.Printf("Nota do quarto bimestre: ")
 	fmt.Scan(&nota4)
 
+	CalculateAverage()
+
+}
+
+func CalculateAverage() {
 	media := (nota1 + nota2 + nota3 + nota4) / 4
 
 	if media >= 7 {
@@ -43,5 +45,4 @@ func main() {
 	} else {
 		fmt.Printf("O aluno %s, ficou com a média: %.2f, status: Aluno reprovado", nomeAluno, media)
 	}
-
 }

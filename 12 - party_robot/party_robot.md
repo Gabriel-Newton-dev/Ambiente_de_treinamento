@@ -1,8 +1,8 @@
 Instruções
-Era uma vez um programador excêntrico morando em uma casa estranha com janelas gradeadas. Um dia, ele aceitou um emprego em um quadro de empregos online para construir um robô de festa. O robô deve cumprimentar as pessoas e ajudá-las a se sentarem. A primeira edição foi muito técnica e mostrou a falta de interação humana do programador. Alguns dos quais também chegaram à próxima edição.
+O robô deve cumprimentar as pessoas e ajudá-las a se sentarem. A primeira edição foi muito técnica e mostrou a falta de interação humana do programador. Alguns dos quais também chegaram à próxima edição.
 
 1. Dê as boas-vindas a um novo convidado para a festa
-Implemente a Welcomefunção para retornar uma mensagem de boas-vindas usando o nome fornecido:
+Implemente a Welcome função para retornar uma mensagem de boas-vindas usando o nome fornecido:
 
 Welcome("Christiane")
 // => Welcome to my party, Christiane!
