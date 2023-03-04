@@ -29,7 +29,14 @@ func main() {
 }
 
 func calculateMedia() {
-	average := (note1 + note2 + note3 + note4/4)
-	fmt.Println(average)
+	average := (note1 + note2 + note3 + note4) / 4
+
+	if average >= 7.0 {
+		fmt.Printf("O %s está aprovado com a média de %.2f", name, average)
+	} else if average >= 5 && average < 7 {
+		fmt.Printf("O %s está em recuperação, ficou com a média %.2f", name, average)
+	} else {
+		fmt.Printf("O %s está reprovado, ficou com a média %2f", name, average)
+	}
 
 }
